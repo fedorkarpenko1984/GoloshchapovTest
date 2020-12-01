@@ -1,0 +1,288 @@
+/*breakpoints*/
+/*desktop*/
+@media (min-width: 1366px) {
+    :root{
+        /*variables screen1*/
+        --ScreenOnePL: 3.513%;
+        --cardW: 45.24vw;
+        --cardH: 23.865vw;
+        --photoSide: 21.45vw;
+        --contentW: 23.79vw;
+        --titleFS: 5.2708vw;
+        --cardTitleFS: 1.4641vw;
+        --timeFS: 1.1713vw;
+        --paragraphFS: 1.1713vw;
+        --contentPL: 2.342vw;
+        --marg1: 1.75vw;
+        --marg2: 0.29vw;
+        --marg3: 1.57vw;
+        --marg4: 0.88vw;
+        --screenPT: 7.027vw;
+        --screenOnePB: 4.612vw;
+        --cardMB: 2.34;
+
+        /*variables screen2*/
+        --screenTwoPl: 3.513%;
+        --screenTwoPB: 6.44vw;
+        --descriptionFS: 1.757vw;
+        --someLitleTextFS: 1.024vw;
+        --inputW: 45.31vw;
+        --inputH: 3.5vw;
+        --inputMT: 1vw;
+        --buttonH: 2.415vw;
+        --buttonFS: 2.604vw;
+        --buttonMT: 2.27vw;
+        --priceFS: 3.806vw;
+        --priceBoxW: 19.765vw;
+        --priceBoxPL: 3.51vw;
+        --priceBoxMarg1: 3.51vw;
+        --priceBoxMarg2: 2.342vw;
+        --priceBoxMarg3: 1.024vw;
+        --priceBoxMarg4: 3.37vw;
+        --priceBoxMarg5: 0.3vw;
+
+        --yellowRectangleW: 9.74vw;
+        --yellowRectangleH: 5.344vw;
+        --yellowRectanglePL: 1.46vw;
+        --priceBoxMarg6: 7.833vw;
+        --percentFS: 1.464vw;
+        --percentMB: -2.8vw;
+        --percentMT: 2.3vw;
+    }
+    /*screen1*/
+    .title{
+        display: inline-block;
+        margin-top: -3.5vw;
+    }
+    .titleMob{
+        display: none;
+    }
+    .card1{
+        flex-direction: row;
+        margin-right: 2.34vw;
+    }
+    .card2{
+        flex-direction: row-reverse;
+        margin-right: 2.34vw;
+    }
+
+    /*screen2*/
+    #mainbox{
+        display: grid;
+        grid-template-areas:
+                "description price"
+                "subscribe price";
+        grid-template-rows: 19.106vw 18.74vw;
+        grid-template-columns: 47.657vw 45.314vw;
+    }
+
+    #description .wrap1{
+        margin-top: 1.976vw;
+    }
+    #description .text{
+        margin-top: 1.756vw;
+    }
+
+    .forDesktop{
+        display: inline-block;
+    }
+    .forGadgets{
+        display: none;
+    }
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1365px) {
+    :root{
+        /*variables screen1*/
+        --ScreenOnePL: 4.1667%;
+        --cardW: 91.66vw;
+        --cardH: 44.66vw;
+        --photoSide: 44.66vw;
+        --contentW: 47vw;
+        --cardMB: 6.25vw;
+        --titleFS: 6.25vw;
+        --cardTitleFS: 2.3437vw;
+        --timeFS: 1.8229vw;
+        --paragraphFS: 1.8229vw;
+        --contentPL: 2.343vw;
+        --marg1: 2.604vw;
+        --marg2: 0.52vw;
+        --marg3: 2.604vw;
+        --marg4: 1.041vw;
+        --screenPT: 9.895vw;
+        --screenOnePB: 3.645vw;
+        --cardMB: 6.25vw;
+
+
+        /*variables screen2*/
+        --screenTwoPl: 4.1667%;
+        --descriptionFS: 2.083vw;
+        --someLitleTextFS: 1.302vw;
+        --inputW: 44.66vw;
+        --inputH: 5.208vw;
+        --inputMT: 2.083vw;
+        --buttonH: 2.415vw;
+        --buttonFS: 2.196vw;
+        --buttonMT: 2.27vw;
+        --screenTwoPB: 9.895vw;
+        --priceFS: 4.106vw;
+        --priceBoxW: 21.567vw;
+        --priceBoxPL: 2.08vw;
+        --priceBoxMarg1: 4.166vw;
+        --priceBoxMarg2: 2.604vw;
+        --priceBoxMarg3: 1.562vw;
+        --priceBoxMarg4: 3.125vw;
+        --priceBoxMarg5: 0.52vw;
+
+        --yellowRectangleW: 13.151vw;
+        --yellowRectangleH: 7.942vw;
+        --yellowRectanglePL: 2.604vw;
+        --priceBoxMarg6: 10.15vw;
+        --percentFS: 2.083vw;
+        --percentMB: -2.3vw;
+        --percentMT: 2.5vw;
+    }
+    /*screen1*/
+    .title{
+        display: inline-block;
+        margin-bottom: 2.05vw;
+        margin-top: -4.2vw;
+    }
+    .titleMob{
+        display: none;
+    }
+    .card1, .card2{
+        flex-direction: row;
+    }
+
+    /*screen2*/
+    #mainbox{
+        display: grid;
+        grid-template-areas:
+                "description price"
+                "description subscribe";
+        grid-template-rows: 32.29vw 29.427vw;
+        grid-template-columns: 47vw 44.66vw;
+    }
+    #description .wrap1{
+        margin-top: 1.976vw;
+    }
+    #description .text{
+        margin-top: 1.756vw;
+    }
+    .forDesktop{
+        display: none;
+    }
+    .forGadgets{
+        display: inline-block;
+    }
+}
+
+
+/*mobile*/
+@media (min-width: 360px) and (max-width: 767px) {
+    :root{
+        /*variables screen1*/
+        --ScreenOnePL: 6.66%;
+        --cardW: 86.66%;
+        --cardH: auto;
+        --photoSide: 86.66vw;
+        --contentW: 86.66vw;
+        --cardMB: 13.66vw;
+        --titleFS: 8.333vw;
+        --cardTitleFS: 3.888vw;
+        --timeFS: 3.333vw;
+        --paragraphFS: 3.333vw;
+        --contentPL: 0vw;
+        --marg1: 4.444vw;
+        --marg2: 1.111vw;
+        --marg3: 2.777vw;
+        --marg4: 2.222vw;
+        --screenPT: 0vw;
+        --screenOnePB: 7.77vw;
+
+        /*variables screen2*/
+        --screenTwoPl: 5.555vw;
+        --screenTwoPB: 6.44vw;
+        --descriptionFS: 4.444vw;
+        --someLitleTextFS: 2.222vw;
+        --inputW: 100%;
+        --inputH: 10vw;
+        --inputMT: 4.44vw;
+        --buttonH: 6.111vw;
+        --buttonFS: 5.555vw;
+        --buttonMT: 8.8vw;
+        --priceFS: 8.333vw;
+        --priceBoxW: 46.11vw;
+        --priceBoxPL: 4.444vw;
+        --priceBoxMarg1: 6.66vw;
+        --priceBoxMarg2: 6.66vw;
+        --priceBoxMarg3: 3.888vw;
+        --priceBoxMarg4: 6.666vw;
+        --priceBoxMarg5: 1.111vw;
+
+        --yellowRectangleW: 24.166vw;
+        --yellowRectangleH: 15.55vw;
+        --yellowRectanglePL: 5.55vw;
+        --priceBoxMarg6: 18.88vw;
+        --percentFS: 3.888vw;
+        --percentMB: -4.5vw;
+        --percentMT: 4.5vw;
+
+    }
+    h1{
+
+    }
+    .title{
+        display: none;
+    }
+    .titleMob{
+        display: flex;
+        flex-direction: column;
+    }
+    .titleWrap1{
+        margin-top: 15.61vw;
+    }
+    .titleWrap2{
+        margin-top: -11.2vw;
+    }
+    .card1, .card2{
+        flex-direction: column-reverse;
+    }
+    .content{
+        height: 48.33vw;
+    }
+    /*screen2*/
+    #mainbox{
+        display: grid;
+        grid-template-areas:
+                "description"
+                "price"
+                "."
+                "subscribe";
+        grid-template-rows: 68vw 66.388vw 1.041vw 69.666vw;
+        grid-template-columns: 88.88vw;
+    }
+    #description .wrap1{
+        margin-top: 1.976vw;
+    }
+    #description{
+        padding-top: 8vw;
+    }
+    #description .text{
+        margin-top: 7.88vw;
+    }
+    #price .monthGrey{
+        text-decoration: none;
+        font-size: 6.666vw;
+        opacity: 0.5;
+        line-height: 170%;
+    }
+    .forDesktop{
+        display: none;
+    }
+    .forGadgets{
+        display: inline-block;
+    }
+}
+}

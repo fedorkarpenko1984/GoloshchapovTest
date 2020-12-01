@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url(./fonts/HelveticaNeueCyr-Roman.woff) format("woff"),
+         url(./fonts/HelveticaNeueCyr-Roman.woff2) format("woff2"),
+         url(./fonts/HelveticaNeueCyr-Bold.woff) format("woff"),
+         url(./fonts/HelveticaNeueCyr-Bold.woff2) format("woff2");
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.flexRowWrap{
+    display: flex;
+    flex-direction: row;
+}
+.fc{
+    display: flex;
+    flex-direction: column;
+}
+
+.screen1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: var(--screenPT);
+    padding-bottom: var(--screenOnePB);
+    padding-left: var(--ScreenOnePL);
+}
+h1{
+    display: inline-block;
+    font-family: "Space Grotesk";
+    font-size: var(--titleFS);
+    background: #1519FF;
+    color: #F4F4F4;
+}
+.screen1 h4{
+    display: inline-block;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: var(--cardTitleFS);
+    margin-top: var(--marg1);
+}
+.par1{
+    margin-top: var(--marg2);
+}
+h5{
+    font-family: "Helvetica";
+    font-size: var(--timeFS);
+    margin-top: var(--marg3);
+}
+.par2{
+    margin-top: var(--marg4);
+}
+.screen1 p{
+    font-family: "Helvetica";
+    font-size: var(--paragraphFS);
+    color: #676767;
+}
+.cardbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-left: var(--cardboxPL);
+}
+.card1, .card2 {
+    display: flex;
+    width: var(--cardW);
+    height: var(--cardH);
+    margin-bottom: var(--cardMB);
+}
+.photo1, .photo2, .photo3, .photo4{
+    width: var(--photoSide);
+    height: var(--photoSide);
+}
+.photo1{
+    border-radius: 50% 0% 0% 0%;
+}
+.photo2{
+    border-radius: 50%;
+}
+.photo4{
+    border-radius: 0% 50% 0% 0%;
+}
+.content{
+    width: var(--contentW);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: var(--contentPL);
+}
+
+/**********/
+.screen2{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: var(--screenPT);
+    padding-bottom: var(--screenTwoPB);
+    padding-left: var(--screenTwoPl);
+}
+#description{
+    grid-area: description;
+}
+#subscribe{
+    grid-area: subscribe;
+}
+#price{
+    grid-area: price;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: row;
+}
+
+#description span{
+    display: inline-block;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    font-size: var(--cardTitleFS);
+    margin-top: 0vw;
+}
+#description p{
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: var(--paragraphFS);
+    color: #676767;
+    margin-top: 0vw;
+    margin-left: 1vw;
+}
+#description .text{
+    font-family: "Helvetica";
+    font-size: var(--descriptionFS);
+    color: #676767;
+    line-height: 167%;
+}
+
+#subscribe input{
+    width: var(--inputW);
+    height: var(--inputH);
+    color: #676767;
+    font-family: Helvetica;
+    font-size: var(--paragraphFS);
+    border-style: none ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none ;
+    margin-top: var(--inputMT);
+}
+
+#subscribe button{
+    height: var(--buttonH);
+    margin-top: var(--buttonMT);
+    font-size: var(--buttonFS);
+    text-decoration-line: underline;
+    background: none;
+    font-family: "Space Grotesk";
+    line-height: 110%;
+    border-style: none;
+    outline: none;
+    padding-left: 0;
+}
+#price .box{
+    display: block;
+    width: var(--priceBoxW);
+    height: auto;
+    padding-left: var(--priceBoxPL);
+}
+#price h5{
+    font-family: Helvetica;
+    font-size: var(--paragraphFS);
+    color: #676767;
+    line-height: 170%;
+    margin-top: var(--priceBoxMarg1);
+}
+#price .price{
+    font-family: Helvetica;
+    font-size: var(--priceFS);
+    line-height: 100%;
+    margin-top: var(--priceBoxMarg2);
+}
+#price .monthBlack, .monthGrey{
+    font-family: Helvetica;
+    font-size: var(--descriptionFS);
+    line-height: 170%;
+}
+#price .monthBlack{
+    margin-top: var(--priceBoxMarg3);
+}
+#price h6{
+    font-family: Helvetica;
+    font-size: var(--someLitleTextFS);
+    line-height: 140%;
+    margin-top: var(--priceBoxMarg4);
+}
+#price .monthGrey{
+    margin-top: var(--priceBoxMarg5);
+    text-decoration: line-through;
+}
+.yellowRectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--yellowRectangleW);
+    height: var(--yellowRectangleH);
+    padding-left: var(--yellowRectanglePL);
+    background: #FEF653;
+    margin-top: var(--priceBoxMarg6);
+}
+.yellowRectangle .percent{
+    font-family: "Space Grotesk";
+    font-size: var(--percentFS);
+    margin-top: var(--percentMT);
+    margin-bottom: var(--percentMB);
+    font-weight: bold;
+}
+.yellowRectangle h6{
+    font-family: Helvetica;
+    font-size: var(--someLitleTextFS);
+    line-height: 140%;
+    color: #676767;
+}
+
